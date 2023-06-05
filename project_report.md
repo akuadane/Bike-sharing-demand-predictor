@@ -23,11 +23,11 @@ Unfortunately, the model got worse after adding few parameters. The score fell t
 Next steps will be to further fine tuning the model to get the score below the 0.5 score.
 
 ### Create a table with the models you ran, the hyperparameters modified, and the kaggle score.
-|    model	        |eval_metric	               |time_limit	|presets	    |score. |
-|-------------------|----------------------------|------------|-------------|-------|
-| 	initial	        |root_mean_squared_error	   |600	        |best_quality	|1.79019|
-| 	add_features	  |root_mean_squared_error	   |600	        |best_quality	|0.69187|
-| 	hpo	            |root_mean_squared_error	   |600	        |best_quality	|0.73963|
+|    model	        |hpo1	                                   |hpo2	    |hpo3	    |score  |
+|-------------------|------------------------------------------|------------|-----------|-------|
+| 	initial	        |default	                               |default	    |default	|1.79019|
+| 	add_features	|default	                               |default	    |default	|0.69187|
+| 	hpo	            |{'CAT': {'depth': ag.space.Int(7,8)}}	   |default	    |default	|0.73963|
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
