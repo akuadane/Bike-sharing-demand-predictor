@@ -6,7 +6,7 @@
 I realized that submitting prediction values that are below zero caused an error from the kaggle side. Therefore, I had to change every negative prediction to zero.
 
 ### What was the top ranked model that performed?
-WeightedEnsemble_L3 was the top ranked model. 
+WeightedEnsemble_L2 was the top ranked model. 
 
 ## Exploratory data analysis and feature creation
 ### What did the exploratory analysis find and how did you add additional features?
